@@ -25,3 +25,6 @@
 ;; Smart mode line
 (setq sml/theme 'dark
       sml/position-percentage-format nil)
+
+;; Better scroll when e.g. searching
+(setq scroll-conservatively 10)
