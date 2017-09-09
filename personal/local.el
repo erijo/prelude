@@ -17,6 +17,7 @@
       dabbrev-case-replace nil)
 
 ;; Prelude config
-(setq prelude-guru nil)
-(setq prelude-clean-whitespace-on-save nil)
-(setq prelude-c-mode-common-hook nil)
+(setq prelude-auto-save nil
+      prelude-guru nil
+      prelude-clean-whitespace-on-save nil
+      prelude-c-mode-common-hook nil)
