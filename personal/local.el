@@ -21,3 +21,7 @@
       prelude-guru nil
       prelude-clean-whitespace-on-save nil
       prelude-c-mode-common-hook nil)
+
+;; Smart mode line
+(setq sml/theme 'dark
+      sml/position-percentage-format nil)
