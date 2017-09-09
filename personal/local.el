@@ -13,8 +13,8 @@
 (add-hook 'c-mode-common-hook 'my-c++-keymap)
 
 ;; dabbrev settings
-(setq dabbrev-case-fold-search t)
-(setq dabbrev-case-replace nil)
+(setq dabbrev-case-fold-search t
+      dabbrev-case-replace nil)
 
 ;; Prelude config
 (setq prelude-guru nil)
