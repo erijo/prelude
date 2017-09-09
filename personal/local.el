@@ -1,7 +1,7 @@
 ;; Global keybindings
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-x f") 'ff-get-other-file)
-(global-set-key (kbd "M-e") 'hippie-expand)
+(global-set-key (kbd "M-e") 'dabbrev-expand)
 (global-set-key (kbd "C-x '") 'next-error)
 (global-set-key (kbd "C-x m") 'my-move-buffer-to-other-window)
 (global-set-key (kbd "M-SPC") 'cycle-spacing)
@@ -15,7 +15,6 @@
 ;; dabbrev settings
 (setq dabbrev-case-fold-search t)
 (setq dabbrev-case-replace nil)
-(setq dabbrev-case-distinction nil)
 
 ;; Prelude config
 (setq prelude-guru nil)
