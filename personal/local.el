@@ -28,3 +28,7 @@
 
 ;; Better scroll when e.g. searching
 (setq scroll-conservatively 10)
+
+;; Directory abbreviations
+(add-to-list 'directory-abbrev-alist
+             '("^/ssh:telldus:/home/erik/" . "telldus:~/"))
