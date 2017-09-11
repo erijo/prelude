@@ -32,3 +32,7 @@
 ;; Directory abbreviations
 (add-to-list 'directory-abbrev-alist
              '("^/ssh:telldus:/home/erik/" . "telldus:~/"))
+
+;; Projectile
+(setq projectile-enable-caching t
+      projectile-use-git-grep t)
