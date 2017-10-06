@@ -29,6 +29,35 @@
 ;; Better scroll when e.g. searching
 (setq scroll-conservatively 10)
 
+;; Don't auto revert when underlying files are changed externally
+(global-auto-revert-mode nil)
+
+;; Disable smartparens mode
+(defun my-prog-mode-override ()
+  (smartparens-mode nil))
+(add-hook 'prelude-prog-mode-hook 'my-prog-mode-override t)
+
 ;; Projectile
 (setq projectile-enable-caching t
       projectile-use-git-grep t)
+
+;; Helm
+(setq helm-buffer-details-flag nil)
+
+;; Disable flycheck and flyspell
+(global-flycheck-mode -1)
+(setq prelude-flyspell nil)
+
+;; Avoid searching for editorconfig all the time
+(when editorconfig-exec-path
+  (setq editorconfig-exec-path
+        (or (executable-find editorconfig-exec-path) "")))
+
+;; ggtags (https://github.com/leoliu/ggtags)
+;; (setq ggtags-highlight-tag nil)
+;; (prelude-require-package 'ggtags)
+;; (setenv "GTAGSLABEL" "new-ctags")
+;; (add-hook 'c-mode-common-hook
+;;           (lambda ()
+;;             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+;;               (ggtags-mode 1))))
