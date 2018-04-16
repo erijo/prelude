@@ -62,3 +62,6 @@
 
 ;; Avoid "gzip: stdin: unexpected end of file" errors
 (setq tramp-inline-compress-start-size 1000000)
+
+;; JS indent level
+(setq js-indent-level 2)
