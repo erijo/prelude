@@ -48,6 +48,8 @@
 (global-flycheck-mode -1)
 (setq prelude-flyspell nil)
 
+;; Don't auto save before compiling
+(setq compilation-ask-about-save t)
 
 ;; ggtags (https://github.com/leoliu/ggtags)
 ;; (setq ggtags-highlight-tag nil)
