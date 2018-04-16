@@ -59,3 +59,6 @@
 ;;           (lambda ()
 ;;             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
 ;;               (ggtags-mode 1))))
+
+;; Avoid "gzip: stdin: unexpected end of file" errors
+(setq tramp-inline-compress-start-size 1000000)
