@@ -48,10 +48,6 @@
 (global-flycheck-mode -1)
 (setq prelude-flyspell nil)
 
-;; Avoid searching for editorconfig all the time
-(when editorconfig-exec-path
-  (setq editorconfig-exec-path
-        (or (executable-find editorconfig-exec-path) "")))
 
 ;; ggtags (https://github.com/leoliu/ggtags)
 ;; (setq ggtags-highlight-tag nil)
